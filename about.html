@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Portfolio</title>
+
+<style>
+:root{
+  --blue-bg:#0b1c2d;
+  --blue-surface:#11263f;
+  --text:#ffffff;
+  --muted:#b9c7d6;
+  --border:rgba(255,255,255,0.08);
+  --accent:#3b82f6;
+
+  --container:1200px;
+
+  --xs:8px;
+  --sm:16px;
+  --md:32px;
+  --lg:64px;
+  --xl:120px;
+
+  --radius-sm:8px;
+  --radius-md:14px;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--blue-bg);
+  color:var(--text);
+  line-height:1.7;
+}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
+.section{
+  padding:clamp(70px,8vw,120px) 0;
+  border-bottom:1px solid var(--border);
+}
+
+/* TYPOGRAPHY */
+h1{
+  font-size:clamp(36px,5vw,52px);
+  text-align:center;
+  margin-bottom:var(--sm);
+}
+h2{
+  font-size:clamp(26px,4vw,38px);
+  margin-bottom:var(--sm);
+}
+h3{
+  font-size:22px;
+  opacity:.9;
+  margin-bottom:var(--xs);
+}
+p{
+  font-size:17px;
+  color:var(--muted);
+  margin-bottom:var(--md);
+  max-width:780px;
+}
+
+/* BUTTON */
+.btn{
+  padding:14px 28px;
+  background:var(--accent);
+  border-radius:10px;
+  color:#fff;
+  font-size:.95rem;
+  transition:.3s ease;
+  display:inline-block;
+}
+.btn:hover{background:#2563eb;}
+
+/* IMAGE AREA */
+.about-image{
+  max-width:800px;
+  margin:var(--lg) auto;
+}
+.about-image img{
+  width:100%;
+  border-radius:var(--radius-md);
+  box-shadow:0 25px 45px rgba(0,0,0,0.45);
+}
+
+/* GRID SECTIONS */
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--lg);
+}
+
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<!-- HERO -->
+<section class="section">
+  <div class="container">
+    <h1>About Me</h1>
+    <p style="text-align:center;margin:0 auto;">
+      I design clean, structured, user-focused websites that help businesses look
+      credible and communicate clearly. No noise, no clutter — only purpose-driven design.
+    </p>
+
+    <!-- IMAGE SECTION (Replace with your A1 mockup) -->
+    <div class="about-image">
+      <img src="images/about.png" alt="About Page Hero">
+    </div>
+  </div>
+</section>
+
+<!-- WHO I AM -->
+<section class="section">
+  <div class="container">
+    <h2>Who I Am</h2>
+    <p>
+      I’m a web designer focused on creating modern, minimal, and easy-to-use websites
+      for small businesses, service providers, and online stores. My work blends clean
+      layout systems, strong typography, and real-world usability.
+    </p>
+
+    <p>
+      I don’t do complicated animations or trendy effects that serve no purpose.
+      Everything I build is intentional, fast, and business-friendly.
+    </p>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="section">
+  <div class="container">
+    <h2>What I Do</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3>Web Design</h3>
+        <p>
+          Clean, high-clarity UI for portfolios, business websites, and e-commerce.
+          Structured layouts that guide users without overwhelming them.
+        </p>
+
+        <h3>E-commerce</h3>
+        <p>
+          WhatsApp ordering, full checkout systems, and order tracking experiences
+          designed with simplicity and trust in mind.
+        </p>
+      </div>
+
+      <div>
+        <h3>Brand & Visual Direction</h3>
+        <p>
+          Color systems, typography pairings, spacing logic, and page flow that make
+          the entire website feel premium and consistent.
+        </p>
+
+        <h3>Responsive Design</h3>
+        <p>
+          Websites designed to work perfectly on mobile, tablet, and desktop —
+          without breaking layout or usability.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CLIENTS CHOOSE ME -->
+<section class="section">
+  <div class="container">
+
+    <h2>Why Clients Choose Me</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3>Clear Communication</h3>
+        <p>
+          No vague messages, no confusion. I keep the process simple and transparent
+          so clients always know what’s happening.
+        </p>
+
+        <h3>Clean & Professional UI</h3>
+        <p>
+          I follow a strict design system — consistent spacing, typography, and layout.
+          This creates a premium look even for small-budget projects.
+        </p>
+      </div>
+
+      <div>
+        <h3>Fast Delivery</h3>
+        <p>
+          I build efficiently without compromising on quality. Projects are delivered
+          on time with clean structure.
+        </p>
+
+        <h3>Real Business Impact</h3>
+        <p>
+          Every website is designed for clarity, trust, and easy conversion — not just
+          visual beauty.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <div class="container">
+    <h2>Tools & Skills</h2>
+
+    <div class="grid-2">
+
+      <div>
+        <h3>Design</h3>
+        <p>Figma<br>UI Layout Systems<br>Branding Basics</p>
+
+        <h3>Development</h3>
+        <p>WordPress<br>Elementor Pro<br>WooCommerce</p>
+      </div>
+
+      <div>
+        <h3>Special Skills</h3>
+        <p>
+          • Clean UI structure <br>
+          • Premium spacing systems <br>
+          • WhatsApp ordering flows <br>
+          • Order tracking setup <br>
+          • Responsive refinement <br>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <h2>Interested in working together?</h2>
+    <p>Let’s discuss your project and see if we’re a good fit.</p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </div>
+</section>
+<div id="site-footer"></div>
+<script src="footer.js"></script>
+
+</body>
+</html>
