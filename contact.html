@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Portfolio</title>
+
+<style>
+/* =============================
+   GLOBAL THEME
+============================== */
+:root{
+  --blue-bg:#0b1c2d;
+  --blue-surface:#11263f;
+  --card:#0f1f33;
+  --text:#ffffff;
+  --muted:#b9c7d6;
+  --border:rgba(255,255,255,0.08);
+
+  --container:1200px;
+  --md:28px;
+  --lg:64px;
+  --radius:16px;
+}
+
+/* BASICS */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--blue-bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 24px;
+}
+
+.section{
+  padding:clamp(80px,8vw,140px) 0;
+}
+
+/* HEADINGS */
+h1{
+  font-size:clamp(38px,4.5vw,52px);
+  text-align:center;
+  font-weight:700;
+  margin-bottom:16px;
+}
+p{
+  font-size:18px;
+  color:var(--muted);
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 64px;
+}
+
+/* CONTACT BOX */
+.contact-box{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:var(--lg);
+  border-radius:var(--radius);
+  max-width:540px;
+  margin:0 auto;
+  box-shadow:0 25px 50px rgba(0,0,0,.45);
+  backdrop-filter:blur(10px);
+}
+
+/* BUTTONS */
+.btn{
+  padding:18px 26px;
+  border-radius:14px;
+  font-size:1rem;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  text-decoration:none;
+  color:#fff;
+  margin-bottom:var(--md);
+  transition:.3s ease;
+}
+
+/* Colors */
+.btn.phone{
+  background:#3b82f6;
+}
+.btn.phone:hover{background:#2563eb;}
+
+.btn.whatsapp{
+  background:#1f2937;
+}
+.btn.whatsapp:hover{background:#111827;}
+
+.btn.instagram{
+  background:#1f2937;
+}
+.btn.instagram:hover{background:#111827;}
+
+/* ICON */
+.icon{
+  width:28px;
+  height:28px;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<section class="section">
+  <div class="container">
+
+    <h1>Contact Me</h1>
+    <p>Choose your preferred way to reach me. Quick response guaranteed.</p>
+
+    <div class="contact-box">
+
+      <!-- PHONE -->
+      <a class="btn phone" href="tel:+919908500325">
+        <img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon">
+        Call Now
+      </a>
+
+      <!-- WHATSAPP -->
+      <a class="btn whatsapp" href="https://wa.me/919908500325" target="_blank">
+        <img class="icon" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp Icon">
+        Chat on WhatsApp
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a class="btn instagram" href="https://www.instagram.com/direct/t/17843739140705999/" target="_blank">
+        <img class="icon" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Icon">
+        Message on Instagram
+      </a>
+
+    </div>
+
+  </div>
+</section>
+<div id="site-footer"></div>
+<script src="footer.js"></script>
+
+</body>
+</html>
