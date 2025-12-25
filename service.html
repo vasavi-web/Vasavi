@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Portfolio</title>
+
+<style>
+/* =================================
+   GLOBAL THEME (Matches Your Site)
+================================= */
+:root{
+  --blue-bg:#0b1c2d;
+  --blue-surface:#11263f;
+  --text:#ffffff;
+  --muted:#b9c7d6;
+  --border:rgba(255,255,255,0.08);
+  --accent:#3b82f6;
+
+  --container:1200px;
+
+  --xs:8px;
+  --sm:16px;
+  --md:32px;
+  --lg:64px;
+  --xl:120px;
+
+  --radius-sm:8px;
+  --radius-md:14px;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--blue-bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
+.section{
+  padding:clamp(70px,8vw,70px) 0;
+  border-bottom:1px solid var(--border);
+}
+
+/* TYPOGRAPHY */
+h1{
+  font-size:clamp(36px,5vw,52px);
+  text-align:center;
+  margin-bottom:var(--sm);
+}
+h2{
+  font-size:clamp(26px,4vw,38px);
+  margin-bottom:var(--sm);
+}
+h3{
+  font-size:22px;
+  opacity:.9;
+  margin-bottom:var(--xs);
+}
+p{
+  font-size:17px;
+  color:var(--muted);
+  margin-bottom:var(--sm);
+}
+
+/* BUTTONS */
+.btn{
+  padding:14px 28px;
+  border-radius:10px;
+  font-size:.95rem;
+  display:inline-block;
+  transition:.3s ease;
+}
+.btn.primary{
+  background:var(--accent);
+  color:#fff;
+}
+.btn.primary:hover{
+  background:#2563eb;
+}
+
+/* SERVICE BLOCK LAYOUT */
+.service-row{
+  display:flex;
+  gap:var(--lg);
+  align-items:center;
+  margin-top:var(--xl);
+}
+.service-image{
+  flex:1;
+  min-width:320px;
+}
+.service-image img{
+  width:100%;
+  border-radius:var(--radius-md);
+  object-fit:cover;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+.service-content{
+  flex:1.2;
+  max-width:700px;
+}
+
+/* MOBILE STACK */
+@media(max-width:900px){
+  .service-row{flex-direction:column;}
+}
+
+</style>
+</head>
+
+<body>
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<!-- PAGE HERO -->
+<section class="section">
+  <div class="container">
+    <h1>Services</h1>
+    <p style="max-width:780px;margin:0 auto;text-align:center;">
+      Clear, structured, and business-focused website solutions designed to help
+      brands communicate better and convert more effectively.
+    </p>
+  </div>
+</section>
+
+
+<!-- =============================
+     SERVICE 1 — PORTFOLIO WEBSITES
+============================== -->
+<section class="section">
+  <div class="container">
+
+    <div class="service-row">
+
+      <div class="service-image">
+        <img src="images/port Services Abstract Illustration.png" alt="Portfolio Website Service">
+      </div>
+
+      <div class="service-content">
+        <h2>Portfolio Websites</h2>
+        <h3>Professional online identity built for credibility</h3>
+        <p>
+          Clean, elegant, and structured portfolio websites designed to showcase
+          your work, experience, and personality with clarity and confidence.
+        </p>
+
+        <p>
+          Best for: Designers, creators, freelancers, coaches, and professionals
+          who want a simple but premium personal brand.
+        </p>
+
+        <h3>What You Get</h3>
+        <p>
+          • Clean hero section<br>
+          • Work/Projects showcase<br>
+          • About + Contact pages<br>
+          • Mobile-first responsive layout<br>
+          • Fast-loading performance<br>
+        </p>
+
+        <a href="contact.html" class="btn primary">Get a Portfolio Website →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     SERVICE 2 — BUSINESS WEBSITES
+============================== -->
+<section class="section">
+  <div class="container">
+
+    <div class="service-row">
+
+      <div class="service-image">
+        <img src="images/bus Services Abstract Illustration.png" alt="Business Website Service">
+      </div>
+
+      <div class="service-content">
+        <h2>Business Websites</h2>
+        <h3>Service-based websites designed to build trust & inquiries</h3>
+        <p>
+          Professional business websites focused on clarity, clean structure, and
+          lead generation — without unnecessary animations or distractions.
+        </p>
+
+        <p>
+          Best for: Agencies, salons, food brands, construction, service providers,
+          consultants, and local businesses.
+        </p>
+
+        <h3>What You Get</h3>
+        <p>
+          • Clean service pages<br>
+          • WhatsApp or form inquiries<br>
+          • Professional brand presentation<br>
+          • Fast, reliable hosting-friendly build<br>
+          • Modern premium UI
+        </p>
+
+        <a href="contact.html" class="btn primary">Get a Business Website →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     SERVICE 3 — E-COMMERCE
+============================== -->
+<section class="section">
+  <div class="container">
+
+    <div class="service-row">
+
+      <div class="service-image">
+        <img src="images/track Services Abstract Illustration.png" alt="Ecommerce Website Service">
+      </div>
+
+      <div class="service-content">
+        <h2>E-commerce Websites</h2>
+        <h3>WhatsApp Orders • Checkout Payments • Order Tracking</h3>
+
+        <p>
+          Three types of e-commerce solutions designed for different business needs —
+          from simple WhatsApp ordering to full checkout + payment + tracking systems.
+        </p>
+
+        <h3>Options Available</h3>
+        <p>
+          • Product listing + WhatsApp orders (no checkout)<br>
+          • Checkout + Online Payments<br>
+          • Checkout + Payments + Order Tracking System
+        </p>
+
+        <p>
+          Suitable for: Clothing, jewelry, home businesses, food brands,
+          beauty products, and small-to-medium e-commerce stores.
+        </p>
+
+        <a href="contact.html" class="btn primary">Build an Online Store →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <h2>Ready to build something professional?</h2>
+    <p>Let’s work together and create a premium experience for your business.</p>
+    <a href="contact.html" class="btn primary">Start a Project</a>
+  </div>
+</section>
+<div id="site-footer"></div>
+<script src="footer.js"></script>
+
+</body>
+</html>
