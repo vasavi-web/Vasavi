@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work | Portfolio</title>
+
+<style>
+:root{
+  --blue-bg:#0b1c2d;
+  --blue-surface:#11263f;
+  --text:#ffffff;
+  --muted:#b9c7d6;
+  --border:rgba(255,255,255,0.08);
+  --accent:#3b82f6;
+
+  --container:1200px;
+
+  --xs:8px;
+  --sm:16px;
+  --md:32px;
+  --lg:64px;
+  --xl:120px;
+
+  --radius-sm:8px;
+  --radius-md:14px;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--blue-bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit}
+
+/* TYPOGRAPHY */
+h1{
+  font-size:clamp(36px,4.5vw,52px);
+  margin-bottom:var(--sm);
+}
+
+h2{
+  font-size:clamp(26px,4vw,38px);
+  margin-bottom:var(--sm);
+}
+
+h3{
+  font-size:20px;
+  margin-bottom:var(--xs);
+}
+
+p{
+  font-size:16px;
+  color:var(--muted);
+  max-width:720px;
+}
+
+/* LAYOUT */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+.section{
+  padding:clamp(80px,10vw,140px) 0;
+}
+
+/* BUTTONS */
+.btn{
+  padding:14px 28px;
+  border-radius:10px;
+  font-size:.95rem;
+  display:inline-block;
+  transition:.3s ease;
+}
+
+.btn.primary{
+  background:var(--accent);
+  color:#fff;
+}
+.btn.primary:hover{background:#2563eb}
+
+.btn.secondary{
+  border:1px solid #334155;
+  color:#e5e7eb;
+}
+.btn.secondary:hover{background:rgba(255,255,255,.05)}
+
+/* ================================
+   HERO (REDUCED HEIGHT)
+================================ */
+.work-hero{
+  background:linear-gradient(
+    to bottom,
+    var(--blue-bg),
+    var(--blue-surface)
+  );
+  text-align:center;
+  padding:clamp(40px,7vw,40px) 0; /* 🔑 KEY FIX */
+}
+
+.eyebrow{
+  display:inline-block;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:var(--sm);
+}
+
+.work-hero h1{
+  max-width:900px;
+  margin:0 auto var(--sm);
+}
+
+.work-hero p{
+  margin:0 auto;
+}
+
+/* ================================
+   PROJECT GRID
+================================ */
+.work-section{
+  background:var(--blue-surface);
+}
+
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:var(--md);
+  margin-top:24px; /* 🔑 tighter transition */
+}
+
+.work-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:var(--md);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.work-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(0,0,0,.45);
+}
+
+.image-wrap{
+  width:100%;
+  height:220px;
+  overflow:hidden;
+  border-radius:var(--radius-sm);
+  margin-bottom:var(--sm);
+}
+
+.image-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* FEATURED */
+.featured{
+  grid-column:span 2;
+}
+
+.featured .image-wrap{
+  height:260px;
+}
+
+.featured h3{font-size:24px}
+.featured p{font-size:17px}
+
+@media(max-width:768px){
+  .featured{grid-column:span 1}
+}
+
+/* ================================
+   CTA
+================================ */
+.cta{
+  background:var(--blue-bg);
+  border-top:1px solid var(--border);
+  text-align:center;
+}
+
+.cta h2{
+  max-width:700px;
+  margin:0 auto var(--sm);
+}
+
+.cta p{
+  margin:0 auto var(--md);
+}
+</style>
+</head>
+
+<body>
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<!-- HERO -->
+<section class="work-hero">
+  <div class="container">
+    <span class="eyebrow">Selected Projects</span>
+    <h1>Work built for clarity, trust, and real business use</h1>
+    <p>
+      A curated selection of portfolio, business, and e-commerce websites
+      designed with usability, performance, and long-term growth in mind.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section work-section">
+  <div class="container">
+
+    <div class="work-grid">
+
+      <div class="work-card featured">
+        <div class="image-wrap">
+          <img src="images/port work thumb.png" alt="Personal Portfolio Website">
+        </div>
+        <h3>Personal Portfolio Website</h3>
+        <p>Professional personal branding website designed for credibility.</p>
+        <a href="case.html#portfolio" class="btn secondary">View Case Study</a>
+      </div>
+
+      <div class="work-card">
+        <div class="image-wrap">
+          <img src="images/bus work thumb.png" alt="Business Website">
+        </div>
+        <h3>Business Website</h3>
+        <p>Service-based website focused on trust and inquiries.</p>
+        <a href="case.html#business" class="btn secondary">View Case Study</a>
+      </div>
+
+      <div class="work-card">
+        <div class="image-wrap">
+          <img src="images/eco Work Thumbnail.png" alt="WhatsApp Ecommerce">
+        </div>
+        <h3>E-commerce (WhatsApp Order)</h3>
+        <p>Product catalog with direct WhatsApp ordering.</p>
+        <a href="case.html#ecommerce-whatsapp" class="btn secondary">View Case Study</a>
+      </div>
+
+      <div class="work-card">
+        <div class="image-wrap">
+          <img src="images/check Work Thumbnail.png" alt="Checkout Ecommerce">
+        </div>
+        <h3>E-commerce (Checkout & Payment)</h3>
+        <p>Complete store with payment gateway .</p>
+        <a href="case.html#ecommerce-checkout" class="btn secondary">View Case Study</a>
+      </div>
+       
+      <div class="work-card">
+        <div class="image-wrap">
+          <img src="images/track Work Thumbnail.png" alt="Checkout Ecommerce">
+        </div>
+        <h3>E-commerce (Track)</h3>
+        <p>Complete store with payment gateway and order tracking.</p>
+        <a href="case.html#ecommerce-tracking" class="btn secondary">View Case Study</a>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="container">
+    <h2>Interested in a similar project?</h2>
+    <p>Let’s see if we’re a good fit.</p>
+    <a href="contact.html" class="btn primary">Start a Project</a>
+  </div>
+</section>
+<div id="site-footer"></div>
+<script src="footer.js"></script>
+
+</body>
+</html>
