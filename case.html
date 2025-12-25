@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies | Portfolio</title>
+
+<style>
+/* ================================
+   GLOBAL THEME
+================================ */
+:root{
+  --blue-bg:#0b1c2d;
+  --blue-surface:#11263f;
+  --text:#ffffff;
+  --muted:#b9c7d6;
+  --border:rgba(255,255,255,0.08);
+  --accent:#3b82f6;
+
+  --container:1200px;
+
+  --xs:8px;
+  --sm:16px;
+  --md:32px;
+  --lg:64px;
+  --xl:120px;
+
+  --radius-sm:8px;
+  --radius-md:14px;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--blue-bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+.section{
+  padding:clamp(70px,8vw,120px) 0;
+  border-bottom:1px solid var(--border);
+}
+
+/* HEADINGS */
+h1{
+  font-size:clamp(36px,5vw,52px);
+  text-align:center;
+  margin-bottom:var(--sm);
+}
+
+h2{
+  font-size:clamp(28px,4vw,40px);
+  margin-bottom:var(--sm);
+}
+
+h3{
+  font-size:20px;
+  margin-bottom:var(--xs);
+  opacity:.9;
+}
+
+p{
+  font-size:17px;
+  color:var(--muted);
+  margin-bottom:var(--sm);
+}
+
+/* CASE STUDY LAYOUT */
+.case-row{
+  display:flex;
+  gap:var(--lg);
+  align-items:flex-start;
+  margin-top:var(--lg);
+}
+
+.case-image{
+  flex:1;
+  min-width:340px;
+}
+
+.case-image img{
+  width:100%;
+  border-radius:var(--radius-md);
+  object-fit:cover;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.case-content{
+  flex:1.2;
+  max-width:700px;
+}
+
+/* ALTERNATING ROWS */
+.reverse{
+  flex-direction:row-reverse;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .case-row,
+  .case-row.reverse{
+    flex-direction:column;
+  }
+}
+
+/* EYEBROW */
+.eyebrow{
+  font-size:13px;
+  color:var(--muted);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:var(--xs);
+}
+
+/* BACK BUTTON */
+.back-wrap{
+  text-align:center;
+  margin:var(--xl) 0;
+}
+
+.btn{
+  padding:14px 28px;
+  background:var(--accent);
+  border-radius:10px;
+  color:#fff;
+  font-size:.95rem;
+  transition:.3s ease;
+}
+
+.btn:hover{
+  background:#2563eb;
+}
+
+ul{
+  color:var(--muted);
+  margin-bottom:var(--md);
+  padding-left:20px;
+  line-height:1.8;
+}
+</style>
+</head>
+
+<body>
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<!-- PAGE HERO -->
+<section class="section">
+  <div class="container">
+    <h1>Case Studies</h1>
+    <p style="max-width:780px;margin:0 auto;text-align:center;">
+      Real-world website builds crafted for clarity, trust, and conversion.
+      Each project reflects a different business need — from personal branding to fully automated e-commerce.
+    </p>
+  </div>
+</section>
+
+
+<!-- =============================
+     CASE 1 — PORTFOLIO WEBSITE
+============================== -->
+<section id="portfolio" class="section">
+  <div class="container">
+
+    <span class="eyebrow">Case Study 1</span>
+
+    <div class="case-row reverse">
+      <div class="case-image">
+        <img src="images/port.png" alt="Portfolio Website Screenshot">
+      </div>
+
+      <div class="case-content">
+        <h2>Personal Portfolio Website</h2>
+
+        <h3>Overview</h3>
+        <p>
+          A premium personal portfolio built to highlight skills, projects, and credibility.
+          Designed with a calm, structured layout that instantly builds trust with clients and hiring managers.
+        </p>
+
+        <h3>Key Goals</h3>
+        <ul>
+          <li>Present work professionally and clearly</li>
+          <li>Build authority & trust without bragging</li>
+          <li>Provide clients a smooth browsing experience</li>
+          <li>Create a strong first impression for LinkedIn & referrals</li>
+        </ul>
+
+        <h3>Why Clients Love This Type of Site</h3>
+        <p>
+          It shows who you are *without overwhelming the visitor*, making it easy for them to evaluate your skills.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     CASE 2 — BUSINESS WEBSITE
+============================== -->
+<section id="business" class="section">
+  <div class="container">
+
+    <span class="eyebrow">Case Study 2</span>
+
+    <div class="case-row">
+      <div class="case-image">
+        <img src="images/bus.png" alt="Business Website Screenshot">
+      </div>
+
+      <div class="case-content">
+        <h2>Business Website (Services)</h2>
+
+        <h3>Overview</h3>
+        <p>
+          A clean, trust-focused business website built for service providers.
+          Designed to convert visitors into inquiries through clarity and structured content.
+        </p>
+
+        <h3>Business Objectives</h3>
+        <ul>
+          <li>Increase inquiries through clear service presentation</li>
+          <li>Show social proof and professionalism</li>
+          <li>Offer WhatsApp + form contact options</li>
+          <li>Guide users to understand the value quickly</li>
+        </ul>
+
+        <h3>Why This Works for Businesses</h3>
+        <p>
+          Clients don’t want noise — they want clarity, trust, and a smooth path to contact.
+          This website provides exactly that.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     CASE 3 — WHATSAPP ECOM
+============================== -->
+<section id="ecommerce-whatsapp" class="section">
+  <div class="container">
+
+    <span class="eyebrow">Case Study 3</span>
+
+    <div class="case-row reverse">
+      <div class="case-image">
+        <img src="images/eco wt.png" alt="WhatsApp Ecommerce Screenshot">
+      </div>
+
+      <div class="case-content">
+        <h2>E-commerce (WhatsApp Order)</h2>
+
+        <h3>Overview</h3>
+        <p>
+          A friction-free e-commerce solution for small businesses that prefer direct WhatsApp orders.
+        </p>
+
+        <h3>Business Goals</h3>
+        <ul>
+          <li>Fastest possible order flow (no checkout)</li>
+          <li>Zero learning curve for customers</li>
+          <li>Auto-filled WhatsApp messages with product details</li>
+          <li>Ideal for COD + local businesses</li>
+        </ul>
+
+        <h3>Why Small Sellers Choose This</h3>
+        <p>
+          No cart abandonment. No complicated forms.  
+          Customers simply choose a product → tap WhatsApp → and place an order.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     CASE 4 — CHECKOUT + PAYMENT
+============================== -->
+<section id="ecommerce-checkout" class="section">
+  <div class="container">
+
+    <span class="eyebrow">Case Study 4</span>
+
+    <div class="case-row">
+      <div class="case-image">
+        <img src="images/checkout.png" alt="Checkout + Payment Screenshot">
+      </div>
+
+      <div class="case-content">
+        <h2>E-commerce (Checkout + Online Payment)</h2>
+
+        <h3>Overview</h3>
+        <p>
+          A complete shopping experience with cart, checkout, and secure payment.
+          Perfect for businesses ready to sell online professionally.
+        </p>
+
+        <h3>Business Goals</h3>
+        <ul>
+          <li>Provide trust-driven checkout experience</li>
+          <li>Support Razorpay / Stripe payments</li>
+          <li>Improve conversion rates with simple design</li>
+          <li>Send manual order confirmation post-purchase</li>
+        </ul>
+
+        <h3>Why Brands Choose This Version</h3>
+        <p>
+          It’s the right balance —  
+          full e-commerce without extra complexity like tracking systems.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =============================
+     CASE 5 — CHECKOUT + PAYMENT + TRACKING
+============================== -->
+<section id="ecommerce-tracking" class="section">
+  <div class="container">
+
+    <span class="eyebrow">Case Study 5</span>
+
+    <div class="case-row reverse">
+      <div class="case-image">
+        <img src="images/track.png" alt="Order Tracking Screenshot">
+      </div>
+
+      <div class="case-content">
+        <h2>E-commerce (Checkout + Payment + Tracking)</h2>
+
+        <h3>Overview</h3>
+        <p>
+          A premium e-commerce system where customers can place orders,
+          pay online, and track their order status from processing to delivery.
+        </p>
+
+        <h3>Business Goals</h3>
+        <ul>
+          <li>Reduce “Where is my order?” messages</li>
+          <li>Increase customer satisfaction and trust</li>
+          <li>Automate order status visibility</li>
+          <li>Create a professional brand experience</li>
+        </ul>
+
+        <h3>Why Scaling Brands Love This</h3>
+        <p>
+          Customers trust brands that offer transparency.
+          Tracking improves experience, reduces support workload,
+          and increases repeat purchases.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- BACK BUTTON -->
+<div class="back-wrap">
+  <a href="work.html" class="btn">← Back to Work</a>
+</div>
+<div id="site-footer"></div>
+<script src="footer.js"></script>
+
+</body>
+</html>
